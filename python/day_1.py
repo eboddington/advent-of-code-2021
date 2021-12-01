@@ -20,7 +20,7 @@ def num_times_increases_sliding_window(depths: list[int]) -> int:
         else:
             this_window_sum = sum(window)
 
-            if i != 0 and this_window_sum > sliding_window_sums[-1]:
+            if sliding_window_sums and this_window_sum > sliding_window_sums[-1]:
                 increase_count += 1
 
             sliding_window_sums.append(this_window_sum)
