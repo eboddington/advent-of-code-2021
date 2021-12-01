@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "/Users/ellis/Library/Caches/pypoetry/virtualenvs/advent-of-code-2021-j28wh-4S-py3.10",
+    "python.testing.pytestArgs": [
+        "python"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
