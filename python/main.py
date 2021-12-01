@@ -13,7 +13,11 @@ def get_typed_lines_from_file(file_path: str, line_object_type: Type[T]) -> list
 
 
 if __name__ == "__main__":
-    day_1_result = day_1.num_times_increases(
+    day_1_part_1_result = day_1.num_times_increases(
         get_typed_lines_from_file("../inputs/day_1", int)
     )
-    print(f"Day 1 result: {day_1_result}")
+    print(f"Day 1 part one: {day_1_part_1_result}")
+    day_1_part_2_result = day_1.num_times_increases_sliding_window(
+        get_typed_lines_from_file("../inputs/day_1", int)
+    )
+    print(f"Day 1 part two: {day_1_part_2_result}")
