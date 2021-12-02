@@ -25,3 +25,5 @@ if __name__ == "__main__":
 
     day_2_part_one_result = day_2.get_new_position(get_typed_lines_from_file("../inputs/day_2", str))
     print(f"Day 2 part one: {day_2_part_one_result}")
+    day_2_part_two_result = day_2.get_new_position_with_aim(get_typed_lines_from_file("../inputs/day_2", str))
+    print(f"Day 2 part two: {day_2_part_two_result}")

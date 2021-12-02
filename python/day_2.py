@@ -28,3 +28,23 @@ def get_new_position(course: list[str]) -> int:
                 pos_horiz += command.distance
 
     return pos_horiz * pos_vert
+
+
+def get_new_position_with_aim(course: list[str]) -> int:
+    depth = 0
+    pos = 0
+    aim = 0
+
+    for command in course:
+        command = Command(command)
+
+        match command.direction:
+            case Direction.UP:
+                aim -= command.distance
+            case Direction.DOWN:
+                aim += command.distance
+            case Direction.FORWARD:
+                pos += command.distance
+                depth += aim * command.distance
+
+    return pos * depth
