@@ -1,6 +1,7 @@
 from typing import Type, TypeVar
 
 import day_1
+import day_2
 
 T = TypeVar("T")
 
@@ -21,3 +22,6 @@ if __name__ == "__main__":
         get_typed_lines_from_file("../inputs/day_1", int)
     )
     print(f"Day 1 part two: {day_1_part_2_result}")
+
+    day_2_part_one_result = day_2.get_new_position(get_typed_lines_from_file("../inputs/day_2", str))
+    print(f"Day 2 part one: {day_2_part_one_result}")
