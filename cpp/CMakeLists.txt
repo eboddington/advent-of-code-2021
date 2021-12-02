@@ -30,6 +30,7 @@ enable_testing()
 add_executable(
         advent-of-code-2021-tests
         src/Day1.test.cpp src/Day1.cpp
+        src/Day2.test.cpp src/Day2.cpp
 )
 target_link_libraries(
         advent-of-code-2021-tests
