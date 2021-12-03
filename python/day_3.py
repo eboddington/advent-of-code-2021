@@ -5,11 +5,13 @@ T = TypeVar("T")
 
 def most_common_item(items: list[T]) -> T:
     # we need to default to 1 if they are equally common
-    ones = [item for item in items if item == "1"]
-    zeros = [item for item in items if item == "0"]
-    if len(ones) == len(zeros):
+    num_ones = len([item for item in items if item == "1"])
+    num_zeros = len([item for item in items if item == "0"])
+
+    if num_ones == num_zeros or num_ones > num_zeros:
         return "1"
-    return "1" if len(ones) > len(zeros) else "0"
+
+    return "0"
 
 
 def least_common_item(items: list[T]) -> T:
