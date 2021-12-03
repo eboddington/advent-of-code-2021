@@ -2,6 +2,7 @@ from typing import Type, TypeVar
 
 import day_1
 import day_2
+import day_3
 
 T = TypeVar("T")
 
@@ -23,7 +24,20 @@ if __name__ == "__main__":
     )
     print(f"Day 1 part two: {day_1_part_2_result}")
 
-    day_2_part_one_result = day_2.get_new_position(get_typed_lines_from_file("../inputs/day_2", str))
+    day_2_part_one_result = day_2.get_new_position(
+        get_typed_lines_from_file("../inputs/day_2", str)
+    )
     print(f"Day 2 part one: {day_2_part_one_result}")
-    day_2_part_two_result = day_2.get_new_position_with_aim(get_typed_lines_from_file("../inputs/day_2", str))
+    day_2_part_two_result = day_2.get_new_position_with_aim(
+        get_typed_lines_from_file("../inputs/day_2", str)
+    )
     print(f"Day 2 part two: {day_2_part_two_result}")
+
+    day_3_part_one_result = day_3.get_power_consumption(
+        get_typed_lines_from_file("../inputs/day_3", str)
+    )
+    print(f"Day 3 part one: {day_3_part_one_result}")
+    day_3_part_two_result = day_3.get_life_support_rating(
+        get_typed_lines_from_file("../inputs/day_3", str)
+    )
+    print(f"Day 3 part two: {day_3_part_two_result}")

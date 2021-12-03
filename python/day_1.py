@@ -26,4 +26,3 @@ def num_times_increases_sliding_window(depths: list[int]) -> int:
             sliding_window_sums.append(this_window_sum)
 
     return increase_count
-
